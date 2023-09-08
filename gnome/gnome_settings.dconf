@@ -1,0 +1,25 @@
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+background-color='rgb(0,43,54)'
+cursor-blink-mode='off'
+font='Fira Code 13'
+foreground-color='rgb(131,148,150)'
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
+background-transparency-percent=8
+
+[org/gnome/terminal/legacy]
+default-show-menubar=false
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[org/gnome/gedit/preferences/editor]
+editor-font='Fira Code Medium 12'
+highlight-current-line=false
+scheme='solarized-dark'
+use-default-font=false
+wrap-last-split-mode='word'
+insert-spaces=true

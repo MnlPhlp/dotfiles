@@ -1,0 +1,4 @@
+{
+  "snippets.ultisnips.pythonPrompt": false,
+  "rust-analyzer.server.path": "/home/manuel/.local/bin/rust-analyzer"
+}

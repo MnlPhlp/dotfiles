@@ -1,0 +1,13 @@
+#!/bin/bash
+
+BRIGHTNESS=$(light | sed 's/\..*//g');
+if [ "${1}" = --level ];
+then
+  echo "  $BRIGHTNESS"%;
+elif [ "${1}" = "--inc" ];
+then
+  light -A ${2};
+elif [ "${1}" = "--dec" ] && [ $BRIGHTNESS -gt 5 ];
+then
+  light -U ${2};
+fi

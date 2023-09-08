@@ -1,0 +1,8 @@
+#! /bin/bash
+binary=$(rustup which cargo)
+binary=${binary/cargo/rust-analyzer}
+if [ ! -e $binary ]; then
+  binary=$(rustup which --toolchain nightly rust-analyzer)
+fi
+echo running $binary
+$binary

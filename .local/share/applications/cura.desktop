@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=cura
+Comment=cura slicer
+Exec=/home/manuel/.local/bin/UltiMaker-Cura-5.3.1-linux-modern.AppImage
+Icon=cura
+Terminal=false
+Type=Application
+NoDisplay=false
+StartupNotify=true

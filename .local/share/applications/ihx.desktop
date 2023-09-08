@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ihx
+Comment=hx editor with additional terminal in picked directory
+Exec=/home/manuel/.local/bin/ihx
+Icon=helix
+Terminal=true
+Type=Application
+NoDisplay=false
+StartupNotify=true

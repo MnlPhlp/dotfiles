@@ -1,0 +1,56 @@
+[[language]]
+name = "rust"
+
+[language.debugger]
+command = "codelldb"
+name = "codelldb"
+port-arg = "--port {}"
+transport = "tcp"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
+
+[[language]]
+name = "cpp"
+language-server = {command="ccls"}
+auto-format = true
+
+[language.debugger]
+command = "codelldb"
+name = "codelldb"
+port-arg = "--port {}"
+transport = "tcp"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "^typst$"
+file-types = ["typ"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+roots = []
+language-server = { command = "typst-lsp" }
+
+[[grammar]]
+name = "typst"
+source = { path = "/home/manuel/programming/tree-sitter-typst"}

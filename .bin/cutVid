@@ -1,0 +1,5 @@
+#! /bin/bash
+read -p "start point(hh:mm:ss.ms): " start
+read -p "end point(hh:mm:ss.ms): " stop
+read -p "output name: " out
+ffmpeg -ss $start -i $1 -to $stop -c copy $out

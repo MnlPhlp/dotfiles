@@ -1,0 +1,2 @@
+#! /bin/bash
+HELIX_RUNTIME=/usr/lib64/helix/runtime/ helix "$@"

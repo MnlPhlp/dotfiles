@@ -1,0 +1,10 @@
+#%PAM-1.0
+
+auth required pam_env.so
+# first password then fingerprint -> to use fingerprint just press enter with empty password
+auth sufficient pam_unix.so try_first_pass likeauth nullok
+auth sufficient pam_fprintd.so
+auth required pam_deny.so
+auth		include		system-auth
+account		include		system-auth
+session		include		system-auth

@@ -1,0 +1,200 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+      "custom/logout",
+      "custom/drawer",
+      "sway/window",
+      "hyprland/window"
+    ],
+    "modules-center": [
+      "custom/left-arrow-dark",
+      "clock#1",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "clock#2",
+      "custom/right-arrow-dark",
+      "custom/right-arrow-light",
+      "clock#3",
+      "custom/right-arrow-dark"
+    ],
+    "modules-right": [
+      "custom/left-arrow-dark",
+      "network",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "pulseaudio",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "backlight",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "battery",
+      "custom/power-profile",
+      "custom/left-arrow-light"
+    ],
+    "network": {
+      "format-disconnected": "no connection",
+      "format-ethernet": "eth",
+      "format-wifi": " {essid}",
+      "tooltip-format-wifi": "{essid}",
+      "on-click": "~/.local/bin/networkmanager_dmenu"
+    },
+    "backlight": {
+      "format": " {percent}%",
+      "on-scroll-up": "~/.local/bin/brightness --inc 5",
+      "on-scroll-down": "~/.local/bin/brightness --dec 5",
+      "smooth-scrolling-threshold": 2
+    },
+    "custom/logout": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "nwg-bar"
+    },
+    "custom/drawer": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "nwg-drawer"
+    },
+    "custom/left-arrow-dark": {
+      "format": "",
+      "tooltip": false
+    },
+    "custom/left-arrow-light": {
+      "format": "",
+      "tooltip": false
+    },
+    "custom/right-arrow-dark": {
+      "format": "",
+      "tooltip": false
+    },
+    "custom/right-arrow-light": {
+      "format": "",
+      "tooltip": false
+    },
+    "sway/workspaces": {
+      "disable-scroll": true,
+      "format": "{name}"
+    },
+    "clock#1": {
+      "format": "{:%a}",
+      "tooltip": false
+    },
+    "clock#2": {
+      "format": "{:%H:%M}",
+      "tooltip": false
+    },
+    "clock#3": {
+      "format": "{:%d.%b}",
+      "tooltip": false,
+      "on-click": "gnome-calendar"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume:2}%",
+      "format-bluetooth": "{icon}  {volume}%",
+      "format-muted": "MUTE",
+      "format-icons": {
+        "headphones": "",
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "scroll-step": 5,
+      "on-click": "pavucontrol",
+      "smooth-scrolling-threshold": 2
+    },
+    "battery": {
+      "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 15
+      },
+      "bat": "BAT1",
+      "on-click": "gnome-power-statistics",
+      "format": "{icon}  {capacity}%",
+      "format-charging": "  {capacity}%",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "custom/power-profile": {
+        "exec": "sleep 0.3 && ~/.local/bin/powerprofilecycle.sh -j",
+        "interval": 120,
+        "on-click": "~/.local/bin/powerprofilecycle.sh",
+        "exec-on-event": true,
+        "return-type": "json",
+    },
+  },
+  {
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": [
+      "sway/workspaces",
+      "wlr/workspaces",
+      "custom/right-arrow-dark"
+    ],
+    "modules-right": [
+      "custom/left-arrow-dark",
+      "disk",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "memory",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "cpu",
+      "temperature",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "idle_inhibitor",
+      "custom/left-arrow-light",
+      "custom/left-arrow-dark",
+      "tray",
+      "custom/left-arrow-light"
+    ],
+    "disk": {
+      "format": " {used}",
+      "on-click": "baobab"
+    },
+    "tray": {
+      "icon-size": 20,
+      "spacing": 5
+    },
+    "memory": {
+      "interval": 5,
+      "format": "Mem {}%",
+      "on-click": "gnome-system-monitor -r"
+    },
+    "cpu": {
+      "interval": 5,
+      "format": "CPU {usage:2}%",
+      "on-click": "gnome-system-monitor -r"
+    },
+    "temperature": {
+      "thermal-zone": 11
+    },
+    "custom/left-arrow-dark": {
+      "format": "",
+      "tooltip": false
+    },
+    "custom/left-arrow-light": {
+      "format": "",
+      "tooltip": false
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      },
+      "tooltip-format-activated": "idle_inhibitor: on",
+      "tooltip-format-deactivated": "idle_inhibitor: off",
+	},
+  }
+]

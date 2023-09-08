@@ -1,0 +1,25 @@
+#! /bin/bash
+
+# move to path
+path=$1
+cd $path
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+# setup terminal
+swaymsg splitv
+kitty --hold -- zsh -i -c "source ~/.zshrc && test -f .ihxrc && source .ihxrc; zsh -i"&
+term_pid=$!
+sleep 0.2
+swaymsg resize shrink height 250px
+# hyprctl dispatch movewindow r
+# hyprctl dispatch resizeactive 300 0
+
+# start editor
+swaymsg focus up
+# hyprctl dispatch movefocus l
+hx .
+
+# close the terminal when the editor closes
+kill $term_pid

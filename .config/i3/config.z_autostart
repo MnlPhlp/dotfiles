@@ -1,0 +1,4 @@
+# autostart some applications
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+exec --no-startup-id nextcloud

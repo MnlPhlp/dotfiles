@@ -1,0 +1,15 @@
+# Directories to search for projects
+dirs = ["/home/manuel/programming"]
+# command to run with selected path as arg
+open_cmd = "ihx"
+# editor to open config with
+editor = "hx"
+# sort projects alphabetically
+sort = true
+# exclude directories that contain projects from automatic list
+exclude_proj_dirs = true
+
+# Paths to specific projects
+[paths]
+"exoglove app" = "/home/manuel/programming/exoglove/app-design"
+"exoglove controller" = "/home/manuel/programming/exoglove/app-design/all-in-one-controller"

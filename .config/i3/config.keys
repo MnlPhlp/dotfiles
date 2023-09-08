@@ -1,0 +1,13 @@
+set $mod Mod4
+
+# lock
+bindsym $mod+l exec --no-startup-id lock
+
+# logout menu
+bindsym $mod+Escape exec --no-startup-id oblogout
+
+# screen settings
+bindsym $mod+p exec --no-startup-id xfce4-display-settings
+
+# search
+bindsym $mod+s exec --no-startup-id export BROWSER=firefox && rofi-surfraw
