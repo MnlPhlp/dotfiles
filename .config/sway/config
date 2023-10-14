@@ -78,7 +78,7 @@ input "1133:16511:Logitech_G502" {
 }
 
 input * {
-	xkb_layout "de"
+	xkb_layout "de(nodeadkeys)"
         xkb_numlock enabled
 }
 

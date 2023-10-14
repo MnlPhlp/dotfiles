@@ -1,3 +1,7 @@
 */.uuid
 .config/sway/outputs
 .config/helix/runtime
+.bin/codelldb_adapter
+.bin/jupyter*
+.bin/ipython*
+.bin/f2py

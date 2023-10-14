@@ -5,8 +5,8 @@ alias godot="/home/manuel/Godot/Godot_v3.4.4-stable_x11.64"
 alias o=xdg-open
 alias t=todoist
 alias vim=nvim
-alias python=python3
-alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
+alias python="/usr/bin/python3"
+# alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 alias arduino="~/arduino/arduino-ide"
 alias rootgui="xhost +si:localuser:root"
 alias norootgui="xhost -si:localuser:root"
@@ -15,7 +15,6 @@ alias mpirun="mpirun --mca opal_warn_on_missing_libcuda 0"
 alias cpufreq='watch -n 1 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""'
 alias android-studio="wmname LG3D && android-studio" 
 alias load-esp="source /home/manuel/programming/export-esp.sh"
-alias python="python3"
 alias ls="ls --hyperlink=auto --colo=auto"
 alias cdproj="cd \$(picproj)"
 alias matlab="/home/manuel/Matlab/bin/matlab"
@@ -34,4 +33,4 @@ export GPG_TTY=$(tty)
 export EDITOR="hx"
 export ANDROID_HOME=/home/manuel/Android/Sdk
 
-#load-esp
+load-esp

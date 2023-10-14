@@ -13,3 +13,4 @@ exclude_proj_dirs = true
 [paths]
 "exoglove app" = "/home/manuel/programming/exoglove/app-design"
 "exoglove controller" = "/home/manuel/programming/exoglove/app-design/all-in-one-controller"
+student_research_project = "/home/manuel/Seafile/uni/studienarbeit"

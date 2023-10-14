@@ -15,6 +15,7 @@ Plug 'ericbn/vim-solarized'
 
 Plug 'christoomey/vim-tmux-navigator'
 
+Plug 'github/copilot.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -106,7 +107,8 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json',
   \ 'coc-rust-analyzer',
-  \ 'coc-clangd'
+  \ 'coc-clangd',
+  \ 'coc-flutter',
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.

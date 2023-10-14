@@ -7,6 +7,7 @@ ln -s /home/manuel/dotfiles/.config/sway ~/.config
 ln -s /home/manuel/dotfiles/.config/walls ~/.config
 ln -s /home/manuel/dotfiles/.config/waybar ~/.config
 ln -s /home/manuel/dotfiles/.config/wspick ~/.config
+ln -s /home/manuel/dotfiles/.config/starship.toml ~/.config
 
 # bin
 ln -s /home/manuel/dotfiles/.bin ~/.local/bin
