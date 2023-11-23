@@ -107,7 +107,6 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json',
   \ 'coc-rust-analyzer',
-  \ 'coc-clangd',
   \ 'coc-flutter',
   \ ]
 " from readme

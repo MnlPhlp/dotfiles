@@ -16,6 +16,7 @@ transport = "tcp"
 [[language.debugger.templates]]
 name = "binary"
 request = "launch"
+
 [[language.debugger.templates.completion]]
 completion = "filename"
 name = "binary"
@@ -27,7 +28,7 @@ runInTerminal = true
 
 [[language]]
 name = "cpp"
-language-server = {command="ccls"}
+language-servers = [ "ccls" ]
 auto-format = true
 
 [language.debugger]
@@ -39,6 +40,7 @@ transport = "tcp"
 [[language.debugger.templates]]
 name = "binary"
 request = "launch"
+
 [[language.debugger.templates.completion]]
 completion = "filename"
 name = "binary"
@@ -55,7 +57,7 @@ file-types = ["typ"]
 comment-token = "//"
 indent = { tab-width = 2, unit = "  " }
 roots = []
-language-server = { command = "typst-lsp" }
+language-servers = [ "typst-lsp" ]
 
 [[grammar]]
 name = "typst"

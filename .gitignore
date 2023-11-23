@@ -5,3 +5,4 @@
 .bin/jupyter*
 .bin/ipython*
 .bin/f2py
+*.AppImage

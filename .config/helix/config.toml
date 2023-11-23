@@ -1,4 +1,4 @@
-theme="pop-dark"
+theme="darcula"
 
 [editor]
 bufferline = "multiple"

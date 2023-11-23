@@ -6,6 +6,7 @@ alias o=xdg-open
 alias t=todoist
 alias vim=nvim
 alias python="/usr/bin/python3"
+alias python3="/usr/bin/python3"
 # alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 alias arduino="~/arduino/arduino-ide"
 alias rootgui="xhost +si:localuser:root"
@@ -18,7 +19,7 @@ alias load-esp="source /home/manuel/programming/export-esp.sh"
 alias ls="ls --hyperlink=auto --colo=auto"
 alias cdproj="cd \$(picproj)"
 alias matlab="/home/manuel/Matlab/bin/matlab"
-alias cura="/home/manuel/.local/bin/UltiMaker-Cura-5.3.1-linux-modern.AppImage"
+alias cura="/home/manuel/.local/bin/UltiMaker-Cura-5.5.0-linux-X64.AppImage"
 alias cdws="cd \$(wspick -p)"
 alias ihx=wspick
 alias cat=bat
@@ -34,3 +35,8 @@ export EDITOR="hx"
 export ANDROID_HOME=/home/manuel/Android/Sdk
 
 load-esp
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+export PATH="$HOME/.local/appimages:$PATH"
