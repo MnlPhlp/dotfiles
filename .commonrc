@@ -5,8 +5,6 @@ alias godot="/home/manuel/Godot/Godot_v3.4.4-stable_x11.64"
 alias o=xdg-open
 alias t=todoist
 alias vim=nvim
-alias python="/usr/bin/python3"
-alias python3="/usr/bin/python3"
 # alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 alias arduino="~/arduino/arduino-ide"
 alias rootgui="xhost +si:localuser:root"
@@ -23,10 +21,10 @@ alias cura="/home/manuel/.local/bin/UltiMaker-Cura-5.5.0-linux-X64.AppImage"
 alias cdws="cd \$(wspick -p)"
 alias ihx=wspick
 alias cat=bat
+alias python=python3
 
 export BW_SESSION="QVnlR9Mr5Bjzq7R59ePp0DEwMKLmmdVJNAghWZ8pbI1DYjd5Lf8/dL/r0Lql+QcrZs8y7IKB94X0He8hi9mVjg=="
-export PYTHONPATH=$PYTHONPATH:/home/manuel/dev/orbGitHubCode/rbdl-orb-release-build/python
-export PATH="/home/manuel/.local/bin:/home/manuel/go/bin:/opt/flutter/bin:/home/manuel/.cargo/bin:/home/manuel/.platformio/penv/bin:$PATH"
+export PATH="/home/manuel/.local/bin:/home/manuel/go/bin:/opt/flutter/bin:/home/manuel/.cargo/bin:$PATH:/home/manuel/.platformio/penv/bin"
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
 export CPATH="$(clang -v 2>&1 | grep "Selected GCC installation" | rev | cut -d' ' -f1 | rev)/include"

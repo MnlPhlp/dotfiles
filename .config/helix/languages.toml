@@ -25,11 +25,8 @@ name = "binary"
 program = "{0}"
 runInTerminal = true
 
-
 [[language]]
 name = "cpp"
-language-servers = [ "ccls" ]
-auto-format = true
 
 [language.debugger]
 command = "codelldb"
@@ -48,6 +45,9 @@ name = "binary"
 [language.debugger.templates.args]
 program = "{0}"
 runInTerminal = true
+
+[language-server.typst-lsp]
+command = "typst-lsp"
 
 [[language]]
 name = "typst"
