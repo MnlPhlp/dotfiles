@@ -7,39 +7,37 @@
 # current profile.
 #
 
-# PSET="powerprofilesctl set"
-# PGET="powerprofilesctl get"
-
-
-PSET="system76-power profile"
+PSET="powerprofilesctl set"
+# PSET="system76-power profile"
+PGET="powerprofilesctl get"
 
 get_profile () {
-  system76-power profile | grep Profile | cut -b 16-100   
+  $PGET
 }
 
 while getopts "mhj" opt; do
   case $opt in
     m)
       case $(get_profile) in
-        Performance)
+        performance)
           echo 🗠 && exit 0
           ;;
-        Battery)
+        power-saver)
           echo   && exit 0
           ;;
-        Balanced)
+        balanced)
           echo   && exit 0 
       esac
       ;;
     j)
       case $(get_profile) in
-        Performance)
+        performance)
           echo '{"tooltip": "performance", "text": "🗠"}' && exit 0
           ;;
-        Battery)
+        power-saver)
           echo '{"tooltip": "battery", "text": " "}' && exit 0
           ;;
-        Balanced)
+        balanced)
           echo '{"tooltip": "balanced", "text": " "}' && exit 0
       esac
       ;;
@@ -54,13 +52,13 @@ while getopts "mhj" opt; do
 done
 
 case $(get_profile) in
-  Performance)
-    $PSET battery && echo   && exit 0
+  performance)
+    $PSET power-saver && echo   && exit 0
     ;;
-  Battery)
+  power-saver)
     $PSET balanced && echo   && exit 0
     ;;
-  Balanced)
+  balanced)
     $PSET performance && echo  && exit 0
     ;;
 esac

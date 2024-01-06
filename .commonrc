@@ -13,7 +13,7 @@ alias ssh="TERM=xterm-256color ssh"
 alias mpirun="mpirun --mca opal_warn_on_missing_libcuda 0"
 alias cpufreq='watch -n 1 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""'
 alias android-studio="wmname LG3D && android-studio" 
-alias load-esp="source /home/manuel/programming/export-esp.sh"
+alias load-esp="source /home/manuel/"
 alias ls="ls --hyperlink=auto --colo=auto"
 alias cdproj="cd \$(picproj)"
 alias matlab="/home/manuel/Matlab/bin/matlab"

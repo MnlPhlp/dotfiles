@@ -1,6 +1,11 @@
 #! /bin/sh
 
-sudo nala install golang libgtk-layer-shell-dev libgtk-3-dev xdg-utils python3-i3ipc
+. /etc/os-release
+if [ "$NAME" == "Arch Linux" ]; then
+  sudo pacman -S go gtk-layer-shell xdg-utils python-i3ipc
+else
+  sudo nala install golang libgtk-layer-shell-dev libgtk-3-dev xdg-utils python3-i3ipc
+fi
 
 mkdir nwg_components
 cd nwg_components
@@ -36,4 +41,3 @@ sudo ./install.sh
 cd ..
 
 sudo rm -rf nwg_components
-

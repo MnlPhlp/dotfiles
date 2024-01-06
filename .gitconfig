@@ -1,7 +1,7 @@
 [user]
 	name = MnlPhlp
 	email = online@philipp-manuel.de
-	signingkey = 4234DEDFEA5C5C63
+	signingkey = AC3CB28FEA5A8605D63BD122D0E3EDAC589BE51D
 [gui]
 	recentrepo = /home/manuel/dotfiles
 	recentrepo = /home/manuel/programming/stepper
